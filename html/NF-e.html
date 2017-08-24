@@ -1,0 +1,99 @@
+<html>
+    <head>
+    <b><title>Master ERP</title></b>
+</head>
+<body>
+    <h1 align="center" style="background-color:rgb(90,90,90);color:white">Master</h1>
+    <hr>
+    <form align= "center" action="/action_page.php">
+        NF-e:
+        <input type="text" name="nfe" value="">
+        <input id="id_button" type="submit" value="Buscar">
+        Destinatario:
+        <input type="text" name="destinatario" value="">
+        <input id="id_button" type="submit" value="Buscar">
+        <br>
+    </form> 
+
+    <style>
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+
+        }
+
+        #id_button {
+            font-weight : bold;
+        }
+
+    </style>
+
+    <table>
+        <tr>
+            <th>NF-e</th>
+            <th>Destinatario</th> 
+            <th>Data Emissao</th>
+            <th>Valor</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td>Luan de Carvalho</td> 
+            <td>16/08/2017</td>
+            <td>10,00</td>
+            <td>Emitido</td>
+        </tr>
+        <tr>
+            <td>222</td>
+            <td>Matheus Henrique</td> 
+            <td>15/08/2017</td>
+            <td>25,00</td>
+            <td>Emitido</td>
+        </tr>
+        <tr>
+            <td>333</td>
+            <td>Lucas Araujo Evangelista dos Santos</td> 
+            <td>14/08/2017</td>
+            <td>5,00</td>
+            <td>Bloqueado</td>
+        </tr>
+        <tr>
+            <td>444</td>
+            <td>Adrielly Fernandes dos Santos</td> 
+            <td>13/08/2017</td>
+            <td>9,00</td>
+            <td>Bloqueado</td>
+        </tr>
+        <tr>
+            <td>555</td>
+            <td>Diego</td> 
+            <td>12/08/2017</td>
+            <td>22,00</td>
+            <td>Emitido</td>
+        </tr>
+    </table>
+
+    <form align= "right">
+        <br>
+        <input id="id_button" type="button" value="Criar" style="color:green">
+        <input id="id_button" type="button" value="Emitir" style="color:blue">
+        <input id="id_button" type="button" value="Cancelar" style="color:red">
+        <input id="id_button" type="button" value="Excluir" >
+        <input id="id_button" type="button" value="Visualizar" style="color:gray">
+    </form>
+
+
+</body>
+</html>
